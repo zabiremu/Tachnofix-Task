@@ -40,7 +40,7 @@ function HomePage() {
   return (
     <>
       <TopNav />
-      <div className="w-full h-lvh App">
+      <div className="w-full h-100 App">
         <div className="h-full mx-auto lg:w-4/5">
           <div className="flex flex-wrap items-center justify-center h-full ">
             <div className="w-4/5">
