@@ -27,7 +27,9 @@ function HomePage() {
       let searchingData = mainData.filter(
         (item) =>
           item?.firstName?.toLowerCase()?.includes(value?.toLowerCase()) ||
-          item?.lastName?.toLowerCase()?.includes(value?.toLowerCase())
+          item?.lastName?.toLowerCase()?.includes(value?.toLowerCase()) ||
+          item?.email?.toLowerCase()?.includes(value?.toLowerCase()) ||
+          item?.company?.name?.toLowerCase()?.includes(value?.toLowerCase())
       );
       console.log(searchingData, "searchingData");
       setUsersData(searchingData);
